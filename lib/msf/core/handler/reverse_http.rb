@@ -359,7 +359,7 @@ protected
 				print_status("#{cli.peerhost}:#{cli.peerport} Unknown request to #{uri_match} #{req.inspect}...")
 				resp.code    = 200
 				resp.message = "OK"
-				resp.body    = "<h3>No site configured at this address</h3>"
+				resp.body    = "<html><h3>No site configured at this address</h3></html>"
 		end
 
 		cli.send_response(resp) if (resp)
